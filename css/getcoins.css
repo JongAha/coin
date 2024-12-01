@@ -571,7 +571,8 @@ label {
     padding: 10px;
     box-sizing: border-box;
     background-color: var(--main-color);
-    width: 90vw;
+    /* width: 90vw; */
+    max-width: 500px;
     border-radius: 20px;
     z-index: 2;
     display: flex;
@@ -653,7 +654,7 @@ label {
 }
 
 .backBtn {
-    width: 40vw;
+    width: 100%;
     height: 50px;
     font-weight: bold;
     border-radius: 5px;
