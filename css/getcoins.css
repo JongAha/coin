@@ -588,7 +588,7 @@ label {
     align-items: center;
 }
 
-.suc-circle {
+/* .suc-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -599,8 +599,16 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.suc-circle {
+    width: 100px;
+    position: relative;
+    overflow: hidden;
 }
-
+.suc-circle img {
+    width: 100%;
+    height: 100%;
+}
 @keyframes expand-circle {
     0% {
         width: 0;
@@ -749,7 +757,7 @@ label {
     box-sizing: border-box;
     padding: 0.4rem 0.32rem;
     border-radius: 20px;
-    color: #aaa;
+    color: #000;
     background-color: var(--main-color);
     display: none;
     /* 初始隐藏 */
