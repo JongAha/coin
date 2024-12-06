@@ -216,11 +216,13 @@ body {
 }
 
 .coin-options {
-    min-height: 35vh;
+    min-height: 15vh;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow-x: scroll;
 }
 
 .coin-option {
@@ -230,6 +232,7 @@ body {
     border-radius: 2px;
     padding: 10px;
     min-height: 6vh;
+    min-width: 15vh;
     text-align: center;
     cursor: pointer;
     display: flex;
@@ -287,17 +290,21 @@ body {
 
 .left {
     /* margin-top: 5px; */
-    margin-bottom: 10px;
-    float: left;
-    margin-left: 10px;
+    margin-bottom: 25px;
+    /* float: left; */
+    display: inline-block;
+    width: 49%;
+    /* margin-left: 10px; */
     color: rgba(0, 0, 0, .56);
 }
 
 .right {
     /* margin-top: 5px; */
-    margin-bottom: 10px;
-    float: right;
-    margin-right: 10px;
+    margin-bottom: 25px;
+    /* float: right; */
+    display: inline-block;
+    width: 49%;
+    /* margin-right: 10px; */
     color: rgba(0, 0, 0, .56);
 }
 
@@ -309,8 +316,10 @@ body {
     margin-top: 5px;
     border: none;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
     padding: 15px;
-    width: 100%;
+    width: 60%;
     font-size: 16px;
     cursor: pointer;
 }

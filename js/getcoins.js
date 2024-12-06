@@ -181,22 +181,23 @@ rechargeButton.addEventListener('click', function () {
         
 
         $('#pop').css('display', 'block');
-        $('.show-box').css('display', 'none');
+        // $('.show-box').css('display', 'none');
         // $('.load-box').css({
         //     'display': 'flex'
         // });
-        $('.load-box-2').css({
-            'display': 'block'
-        });
+        // $('.load-box-2').css({
+        //     'display': 'block'
+        // });
         //启动倒计时
-        startCountdown();
+        // startCountdown();
         setTimeout(function () {
             // $('.load-box').css({
             //     'display': 'none'
             // });
-            $('.load-box-2').css({
-                'display': 'none'
-            });
+            // $('.load-box-2').css({
+            //     'display': 'none'
+            // });
+            $('.show-box').css('display', 'none');
             coinsNum.textContent = coinInput.value;
             username.textContent = inputField.value;
 
@@ -215,7 +216,7 @@ rechargeButton.addEventListener('click', function () {
             setTimeout(() => {
                 coinInput.value = '';
             }, 10);
-        }, 3000);
+        }, 1000);
     }
 });
 
